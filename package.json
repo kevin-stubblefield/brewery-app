@@ -1,0 +1,23 @@
+{
+  "name": "brewery-app-server",
+  "version": "0.1.0",
+  "description": "An app to find local breweries",
+  "main": "server.js",
+  "author": "Kevin Stubblefield",
+  "license": "MIT",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
